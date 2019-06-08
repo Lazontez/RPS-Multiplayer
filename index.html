@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <title>RPS Multiplayer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4" id="userOnename">User 1</h1>
+                        <button type="button" class="btn btn-outline-dark rock">Rock</button>
+                        <button type="button" class="btn btn-outline-secondary paper">Paper</button>
+                        <button type="button" class="btn btn-outline-success scissors">Scissors</button>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4" id="userTwoname">User 2</h1>
+                        <button type="button" class="btn btn-outline-dark rock">Rock</button>
+                        <button type="button" class="btn btn-outline-secondary paper">Paper</button>
+                        <button type="button" class="btn btn-outline-success scissors">Scissors</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <input class="form-control form-control-sm" type="text" id="textBox" placeholder="Talk Smack Here">
+                <div id="messages"></div>
+            </div>
+            <div class="col-md-4"></div>
+
+
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
