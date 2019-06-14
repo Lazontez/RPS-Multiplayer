@@ -5,25 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- css links -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
 
     <title>RPS Multiplayer</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="startGame">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4" id="gameTitle">Rock,Paper,Scissors Shoot</h1>
+                <!-- <button type="button" class="btn btn-outline-dark" id="startBtn">Press to Start</button> -->
+
+            </div>
+        </div>
+    </div>
+    <div class="container" id="mainGame">
         <div class="row">
             <div class="col-md-6">
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
                         <h1 class="display-4" id="userOnename">User 1</h1>
-                        <button type="button" class="btn btn-outline-dark rock">Rock</button>
-                        <button type="button" class="btn btn-outline-secondary paper">Paper</button>
-                        <button type="button" class="btn btn-outline-success scissors">Scissors</button>
+                        <button type="button" class="btn btn-outline-dark rock gameBtn">Rock</button>
+                        <button type="button" class="btn btn-outline-secondary paper gameBtn">Paper</button>
+                        <button type="button" class="btn btn-outline-success scissors gameBtn">Scissors</button>
 
 
                     </div>
@@ -33,9 +52,9 @@
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
                         <h1 class="display-4" id="userTwoname">User 2</h1>
-                        <button type="button" class="btn btn-outline-dark rock">Rock</button>
-                        <button type="button" class="btn btn-outline-secondary paper">Paper</button>
-                        <button type="button" class="btn btn-outline-success scissors">Scissors</button>
+                        <button type="button" class="btn btn-outline-dark rock gameBtn">Rock</button>
+                        <button type="button" class="btn btn-outline-secondary paper gameBtn">Paper</button>
+                        <button type="button" class="btn btn-outline-success scissors gameBtn">Scissors</button>
                     </div>
                 </div>
             </div>
@@ -55,6 +74,7 @@
     </div>
 
     <script src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
